@@ -1,0 +1,18 @@
+server:
+  port: 5656
+
+spring:
+  application:
+    name: Bank-Service
+  r2dbc:
+    name: bank_accounts
+    password: postgres
+    username: postgres
+    url: r2dbc:postgresql://localhost:5432/bank   # postgresql://localhost:5432/bank
+    pool:
+      max-size: 30
+      initial-size: 20
+  data:
+    r2dbc:
+      repositories:
+        enabled: true

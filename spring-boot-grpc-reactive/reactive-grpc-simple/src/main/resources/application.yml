@@ -1,0 +1,17 @@
+server:
+  port: 8000
+  http2:
+    enabled: true
+
+spring:
+  application:
+    name: Bank-Service
+
+logging:
+  level:
+    ROOT: INFO
+
+
+grpc:
+  server:
+    port : 8111
